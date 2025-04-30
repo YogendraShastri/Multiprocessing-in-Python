@@ -15,7 +15,7 @@ Lets talk about multiprocessing in python and how memory can be shared between p
 Multithreading and multiprocessing may seem similar, but they are fundamentally different. In **Multithreading**, multiple threads are created within the same process, sharing the same CPU core and memory space. These threads execute by rapidly switching between tasks (context switching), creating the illusion of parallel execution. However, in reality, they run concurrently rather than truly in parallel.
 On the other hand, **Multiprocessing** involves creating separate processes for each task, each with its own memory space. These processes run independently and can execute simultaneously on different CPU cores, achieving true parallelism.
 
-
+![image](https://github.com/user-attachments/assets/f69d88f7-2815-4d49-b47d-674d8c85a89c)
 
 ## Multiprocessing in Python
 Python’s **multiprocessing** module allows you to create and manage multiple processes easily.
@@ -320,7 +320,7 @@ Process finished with exit code 0
 
 Process synchronization is a machanism by which, we prevent the processes (two or more) simultaneously execute some particular program segment known as critical section. let's suppose you have a critical section balance and two processes withdrawl and deposite want to access it. but if they simultaneously access the balance and modify it, data will be inconsistent due to which the user might either profit or lose extra money.So solution can be at a time one process execute on balance. for that python multiprocessing provides Locks, Semaphores, Events, and Condition Variables etc.
 
-
+![image](https://github.com/user-attachments/assets/b0d9198a-53f5-4afd-9842-fa26e17eb535)
 
 ## Why inconsistancy Occured ?
 
